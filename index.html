@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <!-- <link href = some link here -->
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="css/navbar.css" rel="stylesheet" type="text/css">
+  <link href="css/grid.css" rel="stylesheet" type="text/css">
+  <link href="css/banner.css" rel="stylesheet" type="text/css">
+  <link href="css/job_cards.css" rel="stylesheet" type="text/css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" ref="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/icon.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Steven Gov | Software Engineer</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="brand-title">Steven Gov</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
+  <script src="scripts/navbar.js" type="text/javascript"> </script>
+  <header>
+
+    <div class="banner">
+      <h1>Hi, I'm Steven!</h1>
+      <img src="images/profile.jpg"> 
+      <p></p>
+      <!-- put buttons here for view resume and stuff -->
+      <a href="https://www.github.com/stevengov" class="button"><i class="fab fa-github-square"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/stevengov/" class="button"><i class="fab fa-linkedin"></i> Linkedin</a>
+      <a href="files/resume.pdf" class="button"><i class="fas fa-file-pdf"></i> Resume</a>
+    </div>
+
+  </header>
+
+  <!-- About -->
+  <div class="about" id="about">
+    <h1></h1>
+    <h1>About</h1>
+    <p>Hello! My name is Steven Gov. I am a third-year student at
+      UC San Diego studying Computer Engineering in hopes of becoming a
+      software developer.</p>
+    <p>I am looking for a computer programming position with immense
+      opportunities, expanding and diversifying my knowledge and
+      experience as a learning computer engineer.</p>
+  </div>
+
+
+  <!-- Experience -->
+  <div class="experience" id="experience">
+    <h1>Experience</h1>
+
+    <!-- Skinalyics -->
+    <div class="blog-post">
+      <div class="blog-post-img">
+        <img src="images/skinalytics-img.png">
+      </div>
+      <div class="blog-post-info">
+        <div class="blog-post-date">
+          <h3>June 2020 - PRESENT</h3>
+        </div>
+        <div class="blog-post-title">
+          <h2>Skinalytics - SWE Intern</h2>
+        </div>
+        <div class="blog-post-application">
+          <span>Mobile-App Development | Elasticsearch | REST APIs</span>
+        </div>
+        <div class="blog-post-desc">
+          <p>
+            - Used Elasticsearch to add a keyword search that allows users to search over 4000+
+            products within DynamoDB database, allowing flexibility and ease with searching <br />
+            - Wrote integration tests and created Python scripts that indexed DynamoDB tables onto Elasticsearch
+            to easily test backend functionalities such as searching for products, reviews, and users <br />
+            - Currently using REST APIs and Elasticsearch to implement a privacy model that allows users to adjust
+            their privacy preferences for their posts/reviews <br />
+            - Collaborated with group of interns to debug and prepare the application for release in Sep. 2020
+          </p>
+        </div>
+        <div class="blog-post-read-more">
+          <a href="https://mysciq.com/">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- inGenius -->
+    <div class="blog-post">
+      <div class="blog-post-img">
+        <img src="images/inGeinus-logo.png">
+      </div>
+      <div class="blog-post-info">
+        <div class="blog-post-date">
+          <h3>June 2019 - PRESENT</h3>
+        </div>
+        <div class="blog-post-title">
+          <h2>inGenius - Instructor/Tutor</h2>
+        </div>
+        <div class="blog-post-application">
+          <span>Java | Tutoring | Teaching</span>
+        </div>
+        <div class="blog-post-desc">
+          <p>
+            - Lead various coding and robotics classes offered at summer camp to approximately 350 students <br />
+            - Produced week-long lesson plans and examples for all involved classes, such as Introduction to Java,
+            Ozobot Evos, LEGO Mindstorms EV3, and MIT mobile app inventor <br />
+            - Lead introductory Java and USACO workshops containing approximately 20 6th-12th grade students
+          </p>
+        </div>
+        <div class="blog-post-read-more">
+          <a href="https://ingenius.us/">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Projects -->
+  <div class="projects" id="projects">
+    <h1>Projects</h1>
+    <div class="hero">
+      <div class="tab-box">
+        <button id="tab1" onclick="openProjectTeamsTab()"><i class="fas fa-users"></i> Project Teams</button>
+        <button id="tab2" onclick="openHackathonsTab()"><i class="fas fa-laptop-code"></i> Hackathons</button>
+        <button id="tab3" onclick="openIndividualProjectsTab()"><i class="fas fa-file-code"></i> Individual
+          Projects</button>
+      </div>
+
+      <!-- Team Projects -->
+      <div id="content1" class="content">
+        <main class="grid">
+          <article>
+            <img src="images/robosub.png">
+            <div class="text">
+              <h3>Triton Robosub</h3>
+              <p>Competing in underwater challenges 100% autonomously while emphasizing engineering and robotics</p>
+              <button onclick="location.href='https://robosub.ucsd.edu';">Read more</button>
+            </div>
+          </article>
+        </main>
+      </div>
+
+      <!-- Hackathons -->
+      <div id="content2" class="content">
+        <main class="grid">
+          <article>
+            <img src="images/bluepark-logo.png">
+            <div class="text">
+              <h3>H.A.R.D. Hacks 2019</h3>
+              <p>Improving UCSD's parking system with a simple tap</p>
+              <button onclick="location.href='https://devpost.com/software/bluepark';">Read more</button>
+            </div>
+          </article>
+          <article>
+            <img src="images/outfitters-logo.png">
+            <div class="text">
+              <h3>LA Hacks 2019</h3>
+              <p>A personalized web application designed to select custom outfits tailored to users' personality</p>
+              <button onclick="location.href='https://devpost.com/software/outfitters';">Read more</button>
+            </div>
+          </article>
+          <article>
+            <img src="images/savetogether-logo.png">
+            <div class="text">
+              <h3>LA Hacks 2020</h3>
+              <p>A social media platform motivating users to give back to their community by planting trees</p>
+              <button onclick="location.href='https://devpost.com/software/save-the-tree';">Read more</button>
+            </div>
+          </article>
+        </main>
+      </div>
+
+      <!-- Individual Projects -->
+      <div id="content3" class="content">
+        <main class="grid">
+          <article>
+            <img src="images/stopwatch.png">
+            <div class="text">
+              <h3>Stopwatch</h3>
+              <p>Basic stopwatch web applications that records more than just time</p>
+              <!-- TODO add more here -->
+              <button onclick="location.href='https://github.com/stevengov/stopwatch';">Read more</button>
+            </div>
+          </article>
+          <article>
+            <img src="images/matrices.png">
+            <div class="text">
+              <h3>Matrix</h3>
+              <p>Perform calculations involving matrices on the command-line</p>
+              <button onclick="location.href='https://github.com/stevengov/matrices';">Read more</button>
+            </div>
+          </article>
+        </main>
+      </div>
+
+    </div>
+  </div>
+  <script src="scripts/project_tabs.js" type="text/javascript"> </script>
+</body>
+
+</html>
